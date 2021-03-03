@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
       <title>The Cat House</title>
-    <link rel="stylesheet" type="text/css" href="css/midterm.css" />
+    <link rel="stylesheet" type="text/css" href="midterm.css" />
   </head>
 
   <body>
@@ -28,7 +28,7 @@
           <div class="banner-content">
             <div class="page-wrapper">
               <h1 class="banner-title">Hello, there!</h1>
-              <img class="banner-img" src="images/cat-black_cropped.png" alt="Black cat eyes" />
+              <img class="banner-img" src="cat-black_cropped.png" alt="Black cat eyes" />
               </div>
             </div>
           </div>
@@ -49,7 +49,7 @@
             <h3>Learn about cat</h3>
               <div id="left-side">
                 <p><a href="#">Breeds</a></p>
-                <img src="images/norwegian-cat.jpg" alt="Norwgian cat" />
+                <img src="norwegian-cat.jpg" alt="Norwgian cat" />
                 <p>Learn about different cat breeds.</p>
                 <form action="#">
                   <button class="button2">Read about breeds</button>
@@ -57,7 +57,7 @@
               </div>
               <div id="right-side">
                 <p><a href="#">Find a cat</a></p>
-                <img src="images/kitten.jpg" alt="a kitten" />
+                <img src="kitten.jpg" alt="a kitten" />
                 <p>Help a cat find a home.</p>
                 <form action="#">
                   <button class="button2">Adopt a cat</button>
