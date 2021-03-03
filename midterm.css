@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+/************************************************************************
+ * TABLE OF CONTENTS
+ * =================
+ * 1. GENERAL STYLES
+ * -- 1a. General layout classes
+ * 2. HEADER
+ * 3. MENU
+ * 4. MAIN AREA
+ * -- 4a. Featured section
+ * 5. FOOTER
+ * 6. MEDIA QUERIES
+ #000000
+ #df5e69
+ #f23545
+ #ffffff
+ ************************************************************************/
+
+/* 1. GENERAL STYLES */
+html {
+  box-sizing:border-box;
+  font-size: 16px;
+}
+*, *::before, *::after {
+  box-sizing:inherit;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight:300;
+  margin:0;
+  background-color:#fff;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
+  font-weight:500;
+}
+a {
+  color: black;
+}
+a hover{
+  color: #df5e69;
+}
+/* -- 1a. General layout classes */
+.page-wrapper {
+  max-width:1200px;
+  margin:0 auto;
+  position: relative;
+
+}
+.hidden {
+  position:absolute;
+  left:-10000px;
+  width:1px;
+  height:1px;
+}
+/* 2. HEADER */
+#header {
+
+  margin-bottom:2em;
+}
+/* only set padding for the page-container that's a child
+   of #header */
+
+#header a {
+  text-decoration:none;
+}
+#slogan {
+  float:left;
+  text-transform:uppercase;
+}
+#cat-face{
+ color:#f23545;
+}
+/* 3. MENU */
+#main-menu {
+  position: relative;
+  float:right;
+  padding-top:1.5em;
+  z-index: 1;
+}
+#main-menu a {
+  font-size:1.1em;
+  color: #000;
+}
+#main-menu a:hover {
+  color:#f23545;
+}
+#main-menu ul {
+ padding: 0;
+ margin: 0;
+ list-style: none;
+}
+#main-menu li {
+ display: inline-block;
+ text-transform: capitalize;
+ font-size:1em;
+ padding: 0px 32px;
+}
+
+/* 4. MAIN AREA */
+#main {
+  padding:1em; /* some space for the content */
+  width:100%;
+  margin-right:2%;
+  text-align: center;
+}
+.banner-title{
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+  color:#fff;
+  text-shadow: 3px 3px #f23545;
+  text-transform: uppercase;
+  font-size: 70pt;
+  top:55px;
+  left:20px;
+}
+.banner-img {
+  text-align: center;
+  width:100%;
+  height:auto;
+}
+#account{
+  text-align: center;
+  padding-bottom: 6.25em;
+}
+#account h3{
+  text-transform:uppercase;
+  font-weight: bold;
+  line-height: 100%;
+  padding-bottom: 3em;
+}
+
+#account p:nth-child(2){
+  font-size: 20pt;
+  font-weight: bold;
+}
+#account p:nth-child(3){
+  font-size: 10pt;
+}
+#account a:nth-child(1){
+  color:#f23545;
+}
+#account a:nth-child(1):hover{
+  color: #df5e69;
+}
+#account p:nth-child(2){
+
+}
+.button1{
+  color: #fff;
+  text-decoration: none;
+  background-color: #000;
+  transition-duration: 0.4s;
+  padding:5px;
+  border-radius: 8px;
+}
+.button1:hover{
+  background-color: #f23545;
+}
+#info{
+  background-color: #000;
+  color:#fff;
+  width:100%;
+  overflow: hidden;
+  padding:4em 0;
+}
+#info h3{
+  text-transform: uppercase;
+  font-size:20pt;
+  padding-bottom: 1em;
+}
+#left-side{
+  float:left;
+  width:49%;
+}
+#right-side {
+  display:inline;
+  width:49%; /* some space for the content */
+  float:right;
+  margin: 0;
+  padding: 0;
+}
+#info a{
+  color:#f23545;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+  font-size: 15pt;
+}
+#info a:hover{
+  color:#df5363;
+}
+.button2{
+  color: #fff;
+  text-decoration: none;
+  background-color: #f23545;
+  transition-duration: 0.4s;
+  padding:7px 12px;
+  border-radius: 8px;
+}
+.button2:hover{
+  background-color: #df5369;
+}
+#subscribe {
+  clear:both;
+  background-color: #f23545;
+  padding:4em 0;
+}
+#user-info{
+  display:inline-block;
+  line-height: 200%;
+}
+#user-info h3{
+  font-weight:bold;
+  text-transform: uppercase;
+  font-size: 25pt;
+}
+.user-input label{
+  padding-left: 20px;
+  font-weight: bold;
+}
+.user-input input{
+  width:450px;
+  height:40px;
+  font-size:14pt;
+  margin:15px;
+}
+#tips{
+  text-align: left;
+  margin-bottom: 1.5em;
+}
+
+.checkboxes input{
+  margin: 0px 0px 0px 50px;
+}
+
+.button3{
+  color: #fff;
+  text-decoration: none;
+  background-color: #000;
+  transition-duration: 0.4s;
+  padding:7px 12px;
+  border-radius: 8px;
+  text-transform: uppercase;
+}
+.button3:hover{
+  color: #df5369;
+}
+/* 5. FOOTER */
+#footer {
+  clear:both;
+  color:#fff;
+  font-size:0.8em;
+  background-color: #000;
+  text-align: left;
+}
+#menu-wrapper{
+  display:block;
+}
+#sub-menu{
+  padding-bottom: 3em;
+}
+#sub-menu ul {
+ padding: 0;
+ margin: 0;
+ list-style: none;
+ display: flex;
+ width:100%;
+ justify-content: space-between
+ align-items: stretch;
+}
+.main-subnav{
+  text-transform:uppercase;
+  line-height: 6em;
+}
+#sub-menu li {
+  width:25%;
+ display: inline-block;
+ margin:0 10px;
+}
+#sub-menu a{
+  color:#fff;
+  text-decoration: none;
+  font-size:12pt;
+}
+#sub-menu a:hover{
+  color:#f23545;
+}
+#copyright{
+  border-top: 1px solid #f23545;
+  clear:both;
+  text-align: left;
+}
+/* 6. MEDIA QUERIES */
+/* Add your media queries here */
+/* @media screen and (max-width:768px) {
+  #featured {
+    width:48%;
+  }
+  #main,#sidebar {
+    width:100%;
+    margin-right:0;
+  }
+}
+@media screen and (max-width:480px) {
+
+  #featured {
+    width:100%;
+  }
+
+  #main-menu li {
+    width: 100%;
+    display:flex;
+  }
+
+} */
